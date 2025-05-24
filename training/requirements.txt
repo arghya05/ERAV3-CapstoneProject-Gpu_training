@@ -1,0 +1,43 @@
+# Ultra-Fast LLaMA 3B Training with Unsloth
+# 2x faster training, 50% less memory usage
+
+# Unsloth - Ultra-fast LLM training
+unsloth[colab-new] @ git+https://github.com/unslothai/unsloth.git
+# Alternative: unsloth[kaggle-new] @ git+https://github.com/unslothai/unsloth.git
+
+# Core ML libraries (optimized versions)
+torch>=2.1.0
+transformers>=4.36.0
+datasets>=2.16.0
+accelerate>=0.25.0
+
+# Efficient training
+trl>=0.7.10
+peft>=0.7.0
+bitsandbytes>=0.42.0
+
+# Fast tokenizers
+tokenizers>=0.15.0
+
+# Data processing
+numpy>=1.24.0
+packaging>=21.0
+
+# Training utilities (optional)
+tensorboard>=2.15.0
+wandb>=0.16.0
+
+# System monitoring
+psutil>=5.9.0
+GPUtil>=1.4.0
+
+# For Google Colab (if using)
+# xformers>=0.0.22  # Uncomment for memory optimization
+
+# Model serving (optional)
+gradio>=3.50.0
+flask>=2.3.0
+
+# Evaluation
+sacrebleu>=2.3.0
+rouge-score>=0.1.2 
